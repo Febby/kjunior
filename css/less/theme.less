@@ -111,9 +111,9 @@ img{ max-width: 100%; }
 
 .loader{ position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 99; background: #fff; .preserve-3d; .transition-300; opacity: 1; }
 .strip-holder{ .vertical-align; left: 50%; margin-left: -50px; position: relative; }
-.strip-1, .strip-2, .strip-3{ width: 20px; height: 20px; background: @color-primary; position: relative; -webkit-animation: stripMove 2s ease infinite alternate; animation: stripMove 2s ease infinite alternate; -moz-animation: stripMove 2s ease infinite alternate; }
-.strip-2{ -webkit-animation-duration: 2.1s; animation-duration: 2.1s; background-color: lighten(@color-primary, 20%); }
-.strip-3{ -webkit-animation-duration: 2.2s; animation-duration: 2.2s; background-color: lighten(@color-primary, 40%); }
+.strip-1, .strip-2, .strip-3{ width: 20px; height: 20px; background: @color-junior; position: relative; -webkit-animation: stripMove 2s ease infinite alternate; animation: stripMove 2s ease infinite alternate; -moz-animation: stripMove 2s ease infinite alternate; }
+.strip-2{ -webkit-animation-duration: 2.1s; animation-duration: 2.1s; background-color: lighten(@color-junior, 20%); }
+.strip-3{ -webkit-animation-duration: 2.2s; animation-duration: 2.2s; background-color: lighten(@color-junior, 40%); }
 
 
 @-webkit-keyframes stripMove{
@@ -145,6 +145,7 @@ nav{ .transition-300; opacity: 0; }
 // --------------------------------------------------*/
 
 @color-primary: #0072bc;
+@color-junior: #e17f26;
 @color-heading: #333;
 @color-body: #777;
 @color-muted: #f5f5f5 !important;
@@ -212,8 +213,8 @@ span a:hover{ color: #fff; }
 p a, .text-link a{ color: @color-primary !important; border-color: @color-primary; padding-bottom: 2px; }
 p a, .text-link a:hover{ color: @color-heading; }
 
-.btn{ min-width: 180px; border-radius: 25px; background: @color-primary; text-align: center; padding: 13px 0px 14px 0px; color: #fff; font-size: 15px; .transition-300; font-weight: 600; line-height: 1;  }
-.btn:hover{ color: #fff; background: darken(@color-primary, 5%); }
+.btn{ min-width: 180px; border-radius: 25px; background: @color-junior; text-align: center; padding: 13px 0px 14px 0px; color: #fff; font-size: 15px; .transition-300; font-weight: 600; line-height: 1;  }
+.btn:hover{ color: #fff; background: darken(@color-junior, 5%); }
 .btn-hollow{ background: none; border: 2px solid @color-primary; color: @color-primary; }
 .btn-hollow:hover{ background: @color-primary; }
 
@@ -792,9 +793,11 @@ p.question{ font-weight: 600; color: @color-heading; font-size: 16px; }
 
 form.register{ overflow: hidden; padding-top: 24px; display: block; }
 form.register div{ padding: 0px; }
-input[type="text"], form.register .select-holder{ margin-bottom: 32px; padding: 12px; border: none; background: rgba(255,255,255,0.1); border-radius: 25px; font-size: 14px; max-width: 90%; color: #fff; padding-left: 24px; .transition-300; }
-input[type="text"]:focus, form.register .select-holder:focus,input[type="text"]:hover, form.register .select-holder:hover{ outline: none; background: rgba(255,255,255,0.2); }
-
+input[type="text"], form.register .select-holder{ margin-bottom: 32px; padding: 12px; border: none; background: rgba(66, 62, 59, 0.5); border-radius: 25px; font-size: 14px; max-width: 90%; color: #fff; padding-left: 24px; .transition-300; }
+input[type="text"]:focus, form.register .select-holder:focus,input[type="text"]:hover, form.register .select-holder:hover{ outline: none; background: rgb(255, 253, 250,1); }
+//custom bg color for junior
+.select-holder{background-color: #e17f26!important;}
+.select-holder select {background-color: #e17f26!important;}
 form.register select{ width: 90%; margin: 0px; background: none; border: none; cursor: pointer; }
 form.register select:focus{ outline: none; }
 
