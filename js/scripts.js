@@ -71,7 +71,8 @@ $(document).ready(function() {
     /************** Slider Scripts **************/
 
     $('.hero-slider').flexslider({
-        directionNav: false
+        directionNav: false,
+        slideshowSpeed: 4000
     });
     $('.testimonials-slider').flexslider({
         directionNav: false
@@ -311,6 +312,9 @@ $(window).load(function() {
         iFrame.contents().find('form').attr('target', '_blank').submit();
         return false;
     });
+
+//Datepicker
+    $('#childobpicker').datepicker();
 
     setTimeout(function() {
         $('.loader').addClass('hide-loader');
