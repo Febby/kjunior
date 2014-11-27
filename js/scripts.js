@@ -314,7 +314,7 @@ $(window).load(function() {
     });
 
 //Datepicker
-    $('#childobpicker').datepicker();
+    $('#childobpicker,#trialpicker').datepicker();
 
     setTimeout(function() {
         $('.loader').addClass('hide-loader');
